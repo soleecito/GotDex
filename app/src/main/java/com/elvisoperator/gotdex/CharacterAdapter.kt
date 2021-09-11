@@ -25,7 +25,9 @@ class CharacterAdapter(val character: List<GotCharacter>) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun render(character: GotCharacter) {
-
+            binding.tvName.text = character.name
+            binding.tvHouse.text = character.house
+            //binding.ivCharacter               *Implementar picasso para pintar la imagen en el IV
         }
     }
 }
