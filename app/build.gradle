@@ -29,6 +29,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    viewBinding{
+        enabled = true
+    }
+
 }
 
 dependencies {
@@ -59,5 +63,7 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
 
+    //implementacion de RecyclerView
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
 
 }
