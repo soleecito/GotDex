@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.elvisoperator.gotdex.databinding.ActivityMainBinding
 
-
+/*
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class MainActivity : AppCompatActivity() , SearchView.OnQueryTextListener{
+class MainActivity() : AppCompatActivity() , SearchView.OnQueryTextListener {
 
     private lateinit var binding :ActivityMainBinding
     private lateinit var adapter: CharacterAdapter
@@ -82,14 +82,13 @@ class MainActivity : AppCompatActivity() , SearchView.OnQueryTextListener{
             searchByName(query.lowercase())
         }
         return true
-    }
+    }*/
 
-    override fun onQueryTextChange(p0: String?): Boolean {
-      return true
-=======
+
+
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding : ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

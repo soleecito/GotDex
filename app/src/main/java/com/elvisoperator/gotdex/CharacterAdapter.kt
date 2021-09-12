@@ -1,5 +1,5 @@
 package com.elvisoperator.gotdex
-
+/*
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -24,9 +24,9 @@ class CharacterAdapter(val slug:List<String> , val images:List<String>) :
     }
 
 
-}
+}*/
 
-import android.view.View
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.elvisoperator.gotdex.databinding.ItemCharacterBinding

@@ -4,7 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.elvisoperator.gotdex.databinding.ItemCharacterBinding
 import com.squareup.picasso.Picasso
-
+/*
 class CharacterViewHolder(view: View):RecyclerView.ViewHolder(view) {
 
     private val binding = ItemCharacterBinding.bind(view)
@@ -13,4 +13,4 @@ class CharacterViewHolder(view: View):RecyclerView.ViewHolder(view) {
         binding.characterText.text = slug
 
     }
-}
+}*/
