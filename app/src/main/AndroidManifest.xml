@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GotDex">
         <activity
+            android:name=".SearchActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:theme="@style/FullScreen"
             android:exported="true">
