@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.elvisoperator.gotdex.databinding.ItemCharacterBinding
+import com.squareup.picasso.Picasso
 
 class CharacterAdapter(val character: List<GotCharacter>) :
     RecyclerView.Adapter<CharacterAdapter.CharacterHolder>() {
@@ -15,7 +16,7 @@ class CharacterAdapter(val character: List<GotCharacter>) :
         fun render(character: GotCharacter) {
             binding.tvName.text = character.name
             binding.tvHouse.text = character.house
-            //binding.ivCharacter *Implementar picasso para pintar la imagen en el IV
+            Picasso.get().load(character.image).into(binding.ivCharacter)
         }
     }
 
