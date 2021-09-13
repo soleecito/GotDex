@@ -3,7 +3,7 @@ package com.elvisoperator.gotdex
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.databinding.DataBindingUtil
+//import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.elvisoperator.gotdex.databinding.ActivityMainBinding
 import retrofit2.Call
