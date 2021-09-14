@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GotDex">
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -18,9 +19,16 @@
             android:name=".SearchActivity"
             android:exported="true" />
         <activity
+
             android:name=".splash_activity"
             android:exported="true"
             android:theme="@style/FullScreen">
+
+            android:name=".MainActivity"
+            android:exported="true"
+
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
