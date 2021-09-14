@@ -74,4 +74,8 @@ dependencies {
     //implementacion de RecyclerView
     implementation "androidx.recyclerview:recyclerview:1.2.1"
 
+
+    //dar circunferencia a imagenes
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }
