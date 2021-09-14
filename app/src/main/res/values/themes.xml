@@ -22,7 +22,8 @@
     </style>
 
     <style name="MyCardView" parent="@style/Widget.MaterialComponents.CardView">
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut
+        </item>
     </style>
 
     <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
@@ -32,5 +33,14 @@
         <item name="cornerSizeBottomRight">@dimen/_20sdp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
     </style>
+
+    <style name="Theme.GotDex.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GotDex.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GotDex.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
