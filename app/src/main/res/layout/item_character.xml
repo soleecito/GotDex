@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:theme="@style/ShapeAppearanceOverlay.MaterialCardView.Cut"
+    android:elevation="@dimen/_6sdp"
+    android:layout_margin="@dimen/_10sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_4sdp"
+       >
+
+        <ImageView
+            android:id="@+id/ivCharacter"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="Nombre"
+            android:textColor="@color/primary_label"
+            app:layout_constraintEnd_toStartOf="@+id/ivCharacter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/ivCharacter"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="8dp"
-        android:text="Nombre"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toStartOf="@+id/ivCharacter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvHouse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/_18sdp"
+            android:text="Casa"
+            android:fontFamily="@font/optimusprinceps"
+            android:textColor="@color/primary_label"
+            app:layout_constraintEnd_toStartOf="@+id/ivCharacter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <TextView
-        android:id="@+id/tvHouse"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="8dp"
-        android:text="Casa"
-        android:textColor="#070707"
-        app:layout_constraintEnd_toStartOf="@+id/ivCharacter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
 
