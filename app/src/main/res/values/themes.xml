@@ -16,7 +16,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="FullScreen" parent="Theme.GotDex">
+    <style name="FullScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">false</item>
