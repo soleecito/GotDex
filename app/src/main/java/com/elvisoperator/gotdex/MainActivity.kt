@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
-    lateinit var service: APIService
+    lateinit var service: GotAPI
     lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,14 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerViewCharacter.layoutManager = LinearLayoutManager(this)
 
-        val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://api.got.show/api/show/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
 
-        service = retrofit.create(APIService::class.java)
 
-        obtenerDatos()
+        getListCharacter()
 
         //navigation Start (optimizar a funciones)
         toggle = ActionBarDrawerToggle(this,binding.drawerLayout,R.string.open, R.string.close)
@@ -72,8 +67,9 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-    private fun obtenerDatos() {
-        service.getCharacters().enqueue(object : Callback<List<GotCharacter>> {
+
+    private fun  getListCharacter() {
+        API().getCharacters(object :Callback<List<GotCharacter>>{
             override fun onResponse(
                 call: Call<List<GotCharacter>>,
                 response: Response<List<GotCharacter>>
@@ -83,7 +79,6 @@ class MainActivity : AppCompatActivity() {
                     //seteamos el adapter
                     binding.recyclerViewCharacter.adapter = CharacterAdapter(personajes!!)
                 }
-
             }
 
             override fun onFailure(call: Call<List<GotCharacter>>, t: Throwable) {
